@@ -34,6 +34,12 @@ nav li {
   color: #53aed4;
   
 }
+.dropdown-active p {
+  font-weight: bolder;
+}
+a.active {
+  color: #53aed4;
+}
 a {
   color: #000;
   text-transform: uppercase;

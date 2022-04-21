@@ -54,5 +54,54 @@
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
+
+    <div style="text-align: center">
+      <h1>Exercise 3 & Bonus Question!!</h1>
+      <h4 id="bonus1">
+        var array_one = ["apple", "dog", "cat", "food", "kite", "elephant",
+        "lunch", "book", "laptop"];
+      </h4>
+      <br />
+      <h4 id="bonus2">
+        var array_two = ["dog", "goose", "kite", "meal", "laptop"];
+      </h4>
+      <button style="width: 200px; height: 100px; color: green; cursor: pointer;" onclick="matchValues()">View Matching Values</button>
+      <h4>Thought process and explanations are on the README.md on my <a style="color: blue;" href="https://github.com/jacjanowski/staff-page-example">Github page!</a> </h4>
+
+      
+    </div>
+
+    <script>
+      function matchValues() {
+
+        var array_one = [
+          "apple",
+          "dog",
+          "cat",
+          "food",
+          "kite",
+          "elephant",
+          "lunch",
+          "book",
+          "laptop",
+        ];
+        var array_two = ["dog", "goose","kite", "meal", "laptop"];
+        for (var index = 0; index < array_one.length; index++) {
+          for (var index2 = 0; index2 < array_two.length; index2++) {
+            if (array_one[index] == array_two[index2]) {
+              const newDiv = document.createElement("span");
+
+              // and give it some content
+              const newContent = document.createTextNode(array_one[index]);
+              // add the text node to the newly created div
+              newDiv.appendChild(newContent);
+              // add the newly created element and its content into the DOM
+              const currentDiv = document.getElementById("div1");
+              document.body.insertBefore(newDiv, currentDiv);
+            }
+          }
+        }
+      }
+    </script>
   </body>
 </html>

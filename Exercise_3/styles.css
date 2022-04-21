@@ -38,6 +38,7 @@ nav li {
   font-weight: bolder;
 }
 a.active {
+  transition: color 0.3s ease-in-out;
   color: #53aed4;
 }
 a {
@@ -70,6 +71,14 @@ nav a {
   font-size: 32px;
   text-decoration: none;
   color: #000;
+}
+
+span {
+  margin: 20px;
+  color: green;
+  font-size: 32px;
+  text-align: center;
+  display: block;
 }
 
 /* 

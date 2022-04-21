@@ -1,0 +1,39 @@
+body {
+    font-family: 'Rajdhani', sans-serif;
+}
+h3, h5, h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .7s ease-in-out;
+}
+h3,h5{
+    opacity: 0;
+}
+div {
+    margin: auto;
+    transition: 0.5s ease-in-out;
+    width: 940px;
+    height: 385px;
+    background-image: url("https://www.cadillac.com/content/dam/cadillac/na/us/english/index/vehicles/2022/sedans/ct5/large/01-images/my22-ct5-mov-masthead-l-21cact550004.jpg?imwidth=960");
+}
+
+div:hover {
+    transform: scale(1.1);
+}
+
+div:hover  h1 {
+    transform: scale(1.1);
+    color: white;
+    
+}
+
+div:hover h3{
+    opacity: 1;
+    transform: translate(25%, 18px);
+}
+
+div:hover h5 {
+    opacity: 1;
+    transform: translate(28%, 40px);
+}
